@@ -8,3 +8,13 @@
   justify-content: space-around;
   list-style-type: none;
 }
+
+.main-cover-photo{
+  height: 800px;
+  width: 700px;
+}
+
+.landing-container{
+  display: flex;
+  justify-content: center;
+}
