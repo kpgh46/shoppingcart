@@ -1,3 +1,10 @@
 .test{
   color: yellow;
 }
+
+.header{
+  display: flex;
+  /* border: 1px solid; */
+  justify-content: space-around;
+  list-style-type: none;
+}
