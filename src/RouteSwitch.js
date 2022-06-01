@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Outdoor from "./components/Outdoor";
 import Indoor from "./components/Indoor";
 import New from "./components/New";
+import ShoppingPage from "./components/ShoppingPage";
 
 let RouteSwitch = () => {
 	return (
@@ -14,8 +15,8 @@ let RouteSwitch = () => {
 				<Routes>
 					<Route path="/home" element={<HomePage />}></Route>
 					<Route path="/" element={<LandingPage />}></Route>
-					<Route path="/outdoor" element={<Outdoor />}></Route>
-					<Route path="/indoor" element={<Indoor />}></Route>
+					<Route path="/outdoor" element={<ShoppingPage />}></Route>
+					<Route path="/indoor" element={<ShoppingPage />}></Route>
 					<Route path="/new" element={<New />}></Route>
 				</Routes>
 			</BrowserRouter>
