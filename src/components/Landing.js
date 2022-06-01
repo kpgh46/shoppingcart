@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Cover from "../Assets/coverPhotos/pexels-mark-mccammon-1080696.jpg";
+import Cover from "../Assets/coverPhotos/landingPagePhoto.jpg";
 
 let LandingPage = () => {
+	console.log(Cover);
 	return (
 		<div>
 			<h1>Landing Page</h1>
