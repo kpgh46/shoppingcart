@@ -14,6 +14,8 @@ export default [
 		title: "chair",
 		price: 4,
 		image: { outdoorOne },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
 	{
 		id: 2,
@@ -21,6 +23,8 @@ export default [
 		title: "table",
 		price: 7,
 		image: { outdoorTwo },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
 	{
 		id: 3,
@@ -28,6 +32,8 @@ export default [
 		title: "barstool",
 		price: 2,
 		image: { outdoorThree },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
 	{
 		id: 4,
@@ -35,33 +41,43 @@ export default [
 		title: "couch",
 		price: 8,
 		image: { outdoorFour },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
 	{
 		id: 5,
 		type: "indoor",
 		title: "table",
-		price: 8,
+		price: 12,
 		image: { indoorOne },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
 	{
 		id: 6,
 		type: "indoor",
 		title: "couch",
-		price: 8,
+		price: 20,
 		image: { indoorTwo },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
 	{
 		id: 7,
 		type: "indoor",
 		title: "chair",
-		price: 8,
+		price: 10,
 		image: { indoorThree },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
 	{
 		id: 8,
 		type: "indoor",
 		title: "couch",
-		price: 8,
+		price: 25,
 		image: { indoorFour },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
 ];

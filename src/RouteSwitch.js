@@ -36,11 +36,11 @@ let RouteSwitch = () => {
 					></Route>
 					<Route path="/new" element={<New />}></Route>
 					<Route
-						path="indoor/itemdetail"
+						path="indoor/itemdetail/:id"
 						element={<ItemDetail />}
 					></Route>
 					<Route
-						path="outdoor/itemdetail"
+						path="outdoor/itemdetail/:id"
 						element={<ItemDetail />}
 					></Route>
 				</Routes>

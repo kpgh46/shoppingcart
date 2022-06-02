@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 let Item = (props) => {
 	let source = props.source;
+	// console.log(props);
+
 	return (
 		<div className="item-container">
-			<Link to="itemdetail">
-				{" "}
+			<Link to={`itemdetail/${props.id}`}>
 				<img
 					className="main-item-photo"
 					src={source}

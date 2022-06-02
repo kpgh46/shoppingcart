@@ -3,7 +3,7 @@ import Item from "./Item";
 
 let ShoppingPage = (props) => {
 	let data = props.items;
-	console.log(data);
+	// console.log(data);
 
 	let pictures = data.map((picture) => {
 		return (
@@ -11,7 +11,8 @@ let ShoppingPage = (props) => {
 				source={Object.values(picture.image)}
 				title={picture.title}
 				price={picture.price}
-				description={picture.description}
+				type={picture.type}
+				id={picture.id}
 			/>
 		);
 	});
