@@ -6,6 +6,7 @@ import data from "./data";
 import New from "./components/New";
 import ShoppingPage from "./components/ShoppingPage";
 import ItemDetail from "./components/ItemDetail";
+import Cart from "./components/Cart";
 
 let RouteSwitch = () => {
 	let indoorData = data.filter((item) => {
@@ -43,6 +44,7 @@ let RouteSwitch = () => {
 						path="outdoor/itemdetail/:id"
 						element={<ItemDetail />}
 					></Route>
+					<Route path="/cart" element={<Cart />}></Route>
 				</Routes>
 			</BrowserRouter>
 		</div>
