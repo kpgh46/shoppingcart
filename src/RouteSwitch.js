@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import data from "./data";
 import New from "./components/New";
 import ShoppingPage from "./components/ShoppingPage";
+import ItemDetail from "./components/ItemDetail";
 
 let RouteSwitch = () => {
 	let indoorData = data.filter((item) => {
@@ -34,6 +35,7 @@ let RouteSwitch = () => {
 						}
 					></Route>
 					<Route path="/new" element={<New />}></Route>
+					<Route path="/item" element={<ItemDetail />}></Route>
 				</Routes>
 			</BrowserRouter>
 		</div>

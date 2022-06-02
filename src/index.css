@@ -42,6 +42,8 @@
 }
 
 .shopping-container{
+  /* display: flex; */
+  /* justify-content: center; */
   height: 80%;
   width: 85%;
   border: 1px solid black;
@@ -56,4 +58,9 @@
   height: 300px;
   width: 300px;
   
+}
+
+.item-container{
+  height: 300px;
+  width: 300px;
 }

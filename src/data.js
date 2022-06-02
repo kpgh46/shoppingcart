@@ -39,7 +39,7 @@ export default [
 	{
 		id: 5,
 		type: "indoor",
-		title: "couch",
+		title: "table",
 		price: 8,
 		image: { indoorOne },
 	},
@@ -53,7 +53,7 @@ export default [
 	{
 		id: 7,
 		type: "indoor",
-		title: "couch",
+		title: "chair",
 		price: 8,
 		image: { indoorThree },
 	},
