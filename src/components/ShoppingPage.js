@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Item from "./Item";
 
 let ShoppingPage = (props) => {
@@ -18,9 +17,9 @@ let ShoppingPage = (props) => {
 	});
 
 	return (
-		<div className="shopping-container">
+		<div>
 			<h2>Shop {props.page}</h2>
-			{pictures}
+			<div className="shopping-container">{pictures}</div>
 		</div>
 	);
 };

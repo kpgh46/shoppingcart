@@ -1,7 +1,7 @@
 import React from "react";
 
-let Item = () => {
+let ItemDetail = () => {
 	return <div>This is an item</div>;
 };
 
-export default Item;
+export default ItemDetail;

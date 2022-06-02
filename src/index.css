@@ -42,8 +42,9 @@
 }
 
 .shopping-container{
-  /* display: flex; */
+  display: flex;
   /* justify-content: center; */
+  flex-wrap: wrap;
   height: 80%;
   width: 85%;
   border: 1px solid black;

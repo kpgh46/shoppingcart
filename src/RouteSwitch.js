@@ -35,7 +35,14 @@ let RouteSwitch = () => {
 						}
 					></Route>
 					<Route path="/new" element={<New />}></Route>
-					<Route path="/item" element={<ItemDetail />}></Route>
+					<Route
+						path="indoor/itemdetail"
+						element={<ItemDetail />}
+					></Route>
+					<Route
+						path="outdoor/itemdetail"
+						element={<ItemDetail />}
+					></Route>
 				</Routes>
 			</BrowserRouter>
 		</div>
