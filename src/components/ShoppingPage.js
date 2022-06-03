@@ -2,8 +2,9 @@ import React from "react";
 import Item from "./Item";
 
 let ShoppingPage = (props) => {
-	let data = props.items;
-	console.log(data);
+	let data = props.items.filter((item) => {
+		return item.type === props.page;
+	});
 
 	let pictures = data.map((picture) => {
 		return (

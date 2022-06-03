@@ -2,14 +2,16 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import data from "../data";
 
-let ItemDetail = () => {
+let ItemDetail = (props) => {
 	let { id } = useParams();
 
 	let product = data.find((item) => {
 		return item.id === parseInt(id);
 	});
 
-	console.log(product);
+	// let handleChange = (id) => {
+	// 	props.onClick(id);
+	// };
 
 	return (
 		<div className="itemdetail-container">
@@ -25,7 +27,9 @@ let ItemDetail = () => {
 				<h2>{product.title}</h2>
 				<h4>{product.price}</h4>
 				<p>{product.description}</p>
-				<button>Add to Cart</button>
+				<button onClick={() => props.handleAddToCart(parseInt(id))}>
+					Add to Cart
+				</button>
 			</div>
 		</div>
 	);

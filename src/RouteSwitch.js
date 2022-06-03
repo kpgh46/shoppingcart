@@ -10,15 +10,18 @@ import Cart from "./components/Cart";
 import React from "react";
 
 let RouteSwitch = () => {
-	let indoor = data.filter((item) => {
-		return item.type === "indoor";
-	});
-	let outdoor = data.filter((item) => {
-		return item.type === "outdoor";
-	});
+	let [productData, setProductData] = React.useState(data);
 
-	let [indoorData, setIndoorData] = React.useState(indoor);
-	let [outdoorData, setOutdoorData] = React.useState(outdoor);
+	let handleAddToCart = (id) => {
+		setProductData((previousData) =>
+			previousData.map((data) => {
+				return data.id === id ? { ...data, inCart: true } : data;
+			})
+		);
+	};
+
+	console.log(productData);
+	console.log(typeof productData[0].id);
 
 	return (
 		<div>
@@ -30,23 +33,27 @@ let RouteSwitch = () => {
 					<Route
 						path="/outdoor"
 						element={
-							<ShoppingPage page="outdoor" items={outdoorData} />
+							<ShoppingPage page="outdoor" items={productData} />
 						}
 					></Route>
 					<Route
 						path="/indoor"
 						element={
-							<ShoppingPage page="indoor" items={indoorData} />
+							<ShoppingPage page="indoor" items={productData} />
 						}
 					></Route>
 					<Route path="/new" element={<New />}></Route>
 					<Route
 						path="indoor/itemdetail/:id"
-						element={<ItemDetail />}
+						element={
+							<ItemDetail handleAddToCart={handleAddToCart} />
+						}
 					></Route>
 					<Route
 						path="outdoor/itemdetail/:id"
-						element={<ItemDetail />}
+						element={
+							<ItemDetail handleAddToCart={handleAddToCart} />
+						}
 					></Route>
 					<Route path="/cart" element={<Cart />}></Route>
 				</Routes>
