@@ -7,14 +7,18 @@ import New from "./components/New";
 import ShoppingPage from "./components/ShoppingPage";
 import ItemDetail from "./components/ItemDetail";
 import Cart from "./components/Cart";
+import React from "react";
 
 let RouteSwitch = () => {
-	let indoorData = data.filter((item) => {
+	let indoor = data.filter((item) => {
 		return item.type === "indoor";
 	});
-	let outdoorData = data.filter((item) => {
+	let outdoor = data.filter((item) => {
 		return item.type === "outdoor";
 	});
+
+	let [indoorData, setIndoorData] = React.useState(indoor);
+	let [outdoorData, setOutdoorData] = React.useState(outdoor);
 
 	return (
 		<div>

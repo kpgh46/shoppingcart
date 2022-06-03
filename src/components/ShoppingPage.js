@@ -3,7 +3,7 @@ import Item from "./Item";
 
 let ShoppingPage = (props) => {
 	let data = props.items;
-	// console.log(data);
+	console.log(data);
 
 	let pictures = data.map((picture) => {
 		return (
