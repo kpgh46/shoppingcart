@@ -3,29 +3,24 @@ body{
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+img{
+  border: 1px solid gray;
+}
 
 .header{
   display: flex;
-  /* border: 1px solid; */
   justify-content: space-around;
   list-style-type: none;
   height: 75px;
-  /* font-family: 'Roboto Condensed', sans-serif; */
   
 }
 
-.overlay{
-  height: 800px;
-  width: 800px;
-  position: absolute;
-  border: 2px solid purple;
-  background: rgba(0, 0, 0, 0);
-}
 
 .main-cover-photo{
   height: 800px;
   width: 800px;
   position: relative;
+  
 }
 
 .landing-container{
