@@ -11,7 +11,7 @@ export default [
 	{
 		id: 1,
 		type: "outdoor",
-		inCart: false,
+		inCart: true,
 		title: "chair",
 		price: 4,
 		quantity: 1,
@@ -22,7 +22,7 @@ export default [
 	{
 		id: 2,
 		type: "outdoor",
-		inCart: false,
+		inCart: true,
 		title: "table",
 		price: 7,
 		quantity: 1,
@@ -33,7 +33,7 @@ export default [
 	{
 		id: 3,
 		type: "outdoor",
-		inCart: false,
+		inCart: true,
 		title: "barstool",
 		price: 2,
 		quantity: 1,

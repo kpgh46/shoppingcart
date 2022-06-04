@@ -20,9 +20,6 @@ let RouteSwitch = () => {
 		);
 	};
 
-	console.log(productData);
-	console.log(typeof productData[0].id);
-
 	return (
 		<div>
 			<BrowserRouter>
@@ -55,7 +52,10 @@ let RouteSwitch = () => {
 							<ItemDetail handleAddToCart={handleAddToCart} />
 						}
 					></Route>
-					<Route path="/cart" element={<Cart />}></Route>
+					<Route
+						path="/cart"
+						element={<Cart items={productData} />}
+					></Route>
 				</Routes>
 			</BrowserRouter>
 		</div>

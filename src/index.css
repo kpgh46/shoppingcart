@@ -1,23 +1,56 @@
-.test{
-  color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body{
+  font-family: 'Roboto Condensed', sans-serif;
 }
+
 
 .header{
   display: flex;
   /* border: 1px solid; */
   justify-content: space-around;
   list-style-type: none;
+  height: 75px;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  
+}
+
+.overlay{
+  height: 800px;
+  width: 800px;
+  position: absolute;
+  border: 2px solid purple;
+  background: rgba(0, 0, 0, 0);
 }
 
 .main-cover-photo{
   height: 800px;
-  width: 700px;
+  width: 800px;
+  position: relative;
 }
 
 .landing-container{
   display: flex;
   justify-content: center;
+  
 }
+
+.landing-button{
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+  background-color: blue;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.overlay:hover .landing-button{
+  opacity: 1;
+}
+
 
 .indoor-cover-photo{
   height: 500px;
@@ -29,11 +62,6 @@
   width: 700px;
 }
 
-.landing-container{
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid;
-}
 
 .landing-container div {
   display: flex;
@@ -73,4 +101,23 @@
 
 .fa{
   color:red;
+}
+
+.image-incart{
+  height: 300px;
+  width: 275px;
+}
+
+.cart-container{
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  height: 80%;
+  width: 85%;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }

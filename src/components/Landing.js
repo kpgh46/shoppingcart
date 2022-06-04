@@ -6,12 +6,18 @@ let LandingPage = () => {
 	console.log(Cover);
 	return (
 		<div>
-			<h1>Landing Page</h1>
-			<h3>
-				<Link to="/home">Home</Link>
-			</h3>
 			<div className="landing-container">
-				<img className="main-cover-photo" src={Cover} alt="cover"></img>
+				<div>
+					<img
+						className="main-cover-photo"
+						src={Cover}
+						alt="cover"
+					></img>
+					<div class="overlay"></div>
+					<button className="landing-button">
+						<Link to="/home">Home</Link>
+					</button>
+				</div>
 			</div>
 		</div>
 	);
