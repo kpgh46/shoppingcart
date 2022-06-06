@@ -6,26 +6,29 @@ import outdoorPhoto from "../Assets/coverPhotos/pexels-souranshi-fashion-and-lif
 let HomePage = () => {
 	return (
 		<div>
-			<h2>This is the home page!</h2>
-			<div className="landing-container">
-				<div>
+			<div className="home-container">
+				<div className="home-left">
 					<img
 						className="indoor-cover-photo"
 						src={indoorPhoto}
 						alt="indoor photo"
 					></img>
 					<Link to="/indoor">
-						<button>Shop Indoor</button>
+						<div className="home-overlay">
+							<div>Shop Indoor</div>
+						</div>
 					</Link>
 				</div>
-				<div>
+				<div className="home-right">
 					<img
 						className="outdoor-cover-photo"
 						src={outdoorPhoto}
 						alt="outdoor photo"
 					></img>
 					<Link to="/outdoor">
-						<button>Shop Outdoor</button>
+						<div className="home-overlay">
+							<div>Shop Outdoor</div>
+						</div>
 					</Link>
 				</div>
 			</div>
