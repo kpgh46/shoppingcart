@@ -14,14 +14,17 @@ let ShoppingPage = (props) => {
 				price={picture.price}
 				type={picture.type}
 				id={picture.id}
+				key={picture.id}
 			/>
 		);
 	});
 
+	console.log(data);
+
 	return (
 		<div>
-			<h2>Shop {props.page}</h2>
-			<div className="shopping-container">{pictures}</div>
+			<h2>{props.page}</h2>
+			<div className="cart-container">{pictures}</div>
 		</div>
 	);
 };
