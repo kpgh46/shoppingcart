@@ -8,9 +8,11 @@ let Purchased = (props) => {
 				src={props.image}
 				alt={props.title}
 			></img>
-			<div>Quantity: 1</div>
+
 			<h4>{props.title}</h4>
 			<h4>{props.price}</h4>
+			<h4>Quantity: {props.quantity}</h4>
+			<h4>Total:{props.price * props.quantity} </h4>
 		</div>
 	);
 };

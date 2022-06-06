@@ -20,6 +20,25 @@ let RouteSwitch = () => {
 		);
 	};
 
+	let increaseQuantity = (id) => {
+		setProductData((previousData) =>
+			previousData.map((data) => {
+				return data.id === id
+					? { ...data, quantity: data.quantity++ }
+					: data;
+			})
+		);
+	};
+	let decreaseQuantity = (id) => {
+		setProductData((previousData) =>
+			previousData.map((data) => {
+				return data.id === id
+					? { ...data, quantity: data.quantity-- }
+					: data;
+			})
+		);
+	};
+
 	return (
 		<div>
 			<BrowserRouter>
@@ -54,7 +73,13 @@ let RouteSwitch = () => {
 					></Route>
 					<Route
 						path="/cart"
-						element={<Cart items={productData} />}
+						element={
+							<Cart
+								items={productData}
+								increaseQuantity={increaseQuantity}
+								decreaseQuantity={decreaseQuantity}
+							/>
+						}
 					></Route>
 				</Routes>
 			</BrowserRouter>
