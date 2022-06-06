@@ -15,9 +15,11 @@ let LandingPage = () => {
 							alt="cover"
 						></img>
 					</Link>
-					<div className="overlay">
-						<div>Start Shopping</div>
-					</div>
+					<Link to="/home">
+						<div className="overlay">
+							<div>Start Shopping</div>
+						</div>
+					</Link>
 				</div>
 			</div>
 		</div>
