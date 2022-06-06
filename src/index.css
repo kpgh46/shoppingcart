@@ -162,6 +162,18 @@ border: 2px solid;
   width: 700px;
 }
 
+.item-overlay{
+  /* position: absolute; */
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  content: "details";
+  opacity: .9;
+}
+
+
 
 .landing-container div {
   display: flex;
@@ -187,6 +199,10 @@ border: 2px solid;
   height: 300px;
   width: 300px;
   
+}
+
+.border{
+  border: 5px solid yellow;
 }
 
 .itemdetail-photo{
