@@ -2,11 +2,18 @@ import React from "react";
 import Purchased from "./Purchased";
 
 let Cart = (props) => {
-	console.log(props);
 	let items = props.items;
 	let purchased = items.filter((item) => {
 		return item.inCart;
 	});
+
+	let total = () => {
+		let result = purchased.reduce((total, item) => {
+			return total + item.price * item.quantity;
+		}, 0);
+
+		return result;
+	};
 
 	let inCart = purchased.map((item) => {
 		return (
@@ -35,7 +42,7 @@ let Cart = (props) => {
 		<div>
 			<h2>Cart</h2>
 			<div className="cart-container">{inCart}</div>
-			<div>Total: </div>
+			<div>Total: {total()} </div>
 		</div>
 	);
 };
