@@ -8,15 +8,16 @@ let LandingPage = () => {
 		<div>
 			<div className="landing-container">
 				<div>
-					<img
-						className="main-cover-photo"
-						src={Cover}
-						alt="cover"
-					></img>
-					<div class="overlay"></div>
-					<button className="landing-button">
-						<Link to="/home">Home</Link>
-					</button>
+					<Link to="/home">
+						<img
+							className="main-cover-photo"
+							src={Cover}
+							alt="cover"
+						></img>
+					</Link>
+					<div className="overlay">
+						<div>Start Shopping</div>
+					</div>
 				</div>
 			</div>
 		</div>

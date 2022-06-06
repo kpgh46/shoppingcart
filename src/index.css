@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto+Condensed:wght@300&display=swap');
+
 body{
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -9,41 +10,80 @@ img{
 
 .header{
   display: flex;
-  justify-content: space-around;
   list-style-type: none;
+  align-items: center;
   height: 75px;
+
+  border-bottom: 1px solid;
   
 }
+.header-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
 
+.header-right{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
 
-.main-cover-photo{
-  height: 800px;
-  width: 800px;
-  position: relative;
-  
+.logo{
+  font-family: 'Cedarville Cursive', cursive;
+  text-decoration: none;
+  font-size: x-large;
 }
 
 .landing-container{
   display: flex;
+  position: relative;
   justify-content: center;
-  
-}
-
-.landing-button{
-  position: absolute;
-  height: 40px;
-  width: 70px;
-  border-radius: 5px;
-  background-color: blue;
+  /* height: 200px; */
+  width: 800px;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
+  transform: translate(-50%, 0%);
+  
 }
 
-.overlay:hover .landing-button{
+.main-cover-photo{
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  
+}
+
+.overlay{
+position: absolute;
+top:0;
+left:0;
+height: 100%;
+width: 100%;
+background: rgba(0,0,0,0.3);
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+opacity: 0;
+transition: opacity 0.2s;
+}
+
+.overlay:hover{
   opacity: 1;
+  transform: translateY((20px));
+  transition: transform(.2s);
+}
+
+.overlay div{
+  color:white;
+  font-size: larger;
 }
 
 

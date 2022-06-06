@@ -9,16 +9,27 @@ let Header = () => {
 		<div>
 			<nav>
 				<ul className="header">
-					<Link to="/outdoor">
-						<li>Outdoor</li>
-					</Link>
-					<Link to="/indoor">
-						<li>Indoor</li>
-					</Link>
-					<Link to="/new">
-						<li>New</li>
-					</Link>
-					<Link to="/cart">{el}</Link>
+					<div className="header-left">
+						<div className="logo">
+							<Link style={{ textDecoration: "none" }} to="/">
+								Furniture Design, Inc.
+							</Link>
+						</div>
+						<Link style={{ textDecoration: "none" }} to="/outdoor">
+							<li>Outdoor</li>
+						</Link>
+						<Link style={{ textDecoration: "none" }} to="/indoor">
+							<li>Indoor</li>
+						</Link>
+						<Link style={{ textDecoration: "none" }} to="/new">
+							<li>New</li>
+						</Link>
+					</div>
+					<div className="header-right">
+						<Link style={{ textDecoration: "none" }} to="/cart">
+							{el}
+						</Link>
+					</div>
 				</ul>
 			</nav>
 		</div>
