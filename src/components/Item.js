@@ -9,6 +9,10 @@ let Item = (props) => {
 	let [over, setOver] = React.useState(false);
 	console.log(over);
 
+	let capitalize = (string) => {
+		return string.charAt(0).toUpperCase() + string.slice(1);
+	};
+
 	return (
 		<div
 			onMouseOver={() => setOver(true)}
@@ -28,11 +32,21 @@ let Item = (props) => {
 			</Link>
 			<div className="item-details">
 				<div>
-					<div>{props.title}</div>
-					<div>{props.price}</div>
+					<div>
+						{capitalize(props.title)} - ${props.price}
+					</div>
 				</div>
 
-				{over ? <div className="details-button">Details</div> : ""}
+				{over ? (
+					<Link
+						style={{ textDecoration: "none" }}
+						to={`itemdetail/${props.id}`}
+					>
+						<div className="details-button">Details</div>
+					</Link>
+				) : (
+					""
+				)}
 			</div>
 		</div>
 	);

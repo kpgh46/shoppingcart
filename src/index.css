@@ -174,24 +174,29 @@ border: 2px solid;
 }
 
 .item-details{
-  border: 3px solid yellow;
+   
   display: flex;
   justify-content: space-between;
 }
 
 .item-container{
   /* position: relative; */
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 350px
 }
 
 .details-button{
-  color:red;
+  color:black;
   position: relative;
-  font-size: larger;
-  border: 1px solid;
+  font-size: small;
+  border: .75px solid;
   border-radius: 5px;
   padding: 5px;
+  margin-right: 8px;
+}
+
+.details-button:hover{
+  background-color:#F8F8F8;
 }
 
 .landing-container div {
@@ -254,3 +259,9 @@ div h2 {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+
+.item-details div div {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+

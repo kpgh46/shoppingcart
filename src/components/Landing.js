@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Cover from "../Assets/coverPhotos/landingPagePhoto.jpg";
 
 let LandingPage = () => {
-	console.log(Cover);
 	return (
 		<div>
 			<div className="landing-container">
