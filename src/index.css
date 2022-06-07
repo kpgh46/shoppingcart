@@ -28,7 +28,7 @@ img{
   display: flex;
   width: 50%;
   justify-content: flex-end;
-  margin-right: 50px;
+  margin-right: 6.5%;
 }
 
 .logo{
@@ -181,8 +181,14 @@ border: 2px solid;
 
 .item-container{
   /* position: relative; */
-  /* border: 1px solid blue; */
-  height: 350px
+  border: .25px solid gray;
+  height: 350px;
+  margin: 2px;
+  
+}
+
+.item-container:hover{
+  border: 1px solid gray;
 }
 
 .details-button{
@@ -197,6 +203,7 @@ border: 2px solid;
 
 .details-button:hover{
   background-color:#F8F8F8;
+  /* border: .25px solid gray; */
 }
 
 .landing-container div {
@@ -222,6 +229,7 @@ border: 2px solid;
 .main-item-photo {
   height: 300px;
   width: 300px;
+  border: 2px solid white;
   
 }
 
@@ -244,7 +252,7 @@ border: 2px solid;
 }
 
 div h2 {
-  margin-left: 4.5%;
+  margin-left: 6.5%;
 }
 
 .cart-container{
@@ -252,7 +260,8 @@ div h2 {
   flex-wrap: wrap;
   height: 80%;
   width: 90%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  justify-content: center;
   position: absolute;
   top: 60%;
   left: 50%;

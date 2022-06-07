@@ -19,11 +19,13 @@ let ShoppingPage = (props) => {
 		);
 	});
 
-	console.log(data);
+	let capitalize = (string) => {
+		return string.charAt(0).toUpperCase() + string.slice(1);
+	};
 
 	return (
 		<div>
-			<h2>{props.page}</h2>
+			<h2>{capitalize(props.page)}</h2>
 			<div className="cart-container">{pictures}</div>
 		</div>
 	);
