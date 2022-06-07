@@ -13,6 +13,7 @@ let Item = (props) => {
 		<div
 			onMouseOver={() => setOver(true)}
 			onMouseOut={() => setOver(false)}
+			className="item-container"
 		>
 			<Link to={`itemdetail/${props.id}`}>
 				<img
@@ -25,9 +26,14 @@ let Item = (props) => {
 					alt="item photo"
 				></img>
 			</Link>
-			<div>{props.title}</div>
-			<div>{props.price}</div>
-			<div>{props.description}</div>
+			<div className="item-details">
+				<div>
+					<div>{props.title}</div>
+					<div>{props.price}</div>
+				</div>
+
+				{over ? <div className="details-button">Details</div> : ""}
+			</div>
 		</div>
 	);
 };

@@ -163,7 +163,7 @@ border: 2px solid;
 }
 
 .item-overlay{
-  /* position: absolute; */
+  position: relative;
   top:0;
   left:0;
   height: 100%;
@@ -173,7 +173,26 @@ border: 2px solid;
   opacity: .9;
 }
 
+.item-details{
+  border: 3px solid yellow;
+  display: flex;
+  justify-content: space-between;
+}
 
+.item-container{
+  /* position: relative; */
+  border: 1px solid blue;
+  height: 350px
+}
+
+.details-button{
+  color:red;
+  position: relative;
+  font-size: larger;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+}
 
 .landing-container div {
   display: flex;
