@@ -252,6 +252,7 @@ border: 2px solid;
   border: .25px solid gray;
 }
 
+
 .fa{
   color:red;
 }
@@ -281,12 +282,9 @@ div h2 {
 .cart-container{
   display: flex;
   flex-wrap: wrap;
-  
   height: 80%;
   width: 90%;
-  /* border: 1px solid black; */
   margin-left: 2%;
-  /* justify-content: center; */
   position: absolute;
   top: 60%;
   left: 50%;
@@ -314,6 +312,13 @@ div h2 {
   color:white;
   border-radius: 2px;
 
+}
+
+.addToCart:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
 }
 
 .purchased-item{
