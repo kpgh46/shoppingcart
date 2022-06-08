@@ -48,9 +48,11 @@ let Cart = (props) => {
 
 	return (
 		<div>
-			<h2>Cart</h2>
+			<div className="cart-total">
+				<h2>Cart ({purchased.length})</h2>
+				<h2 className="total">Total: ${total()}</h2>
+			</div>
 			<div className="cart-container">{inCart}</div>
-			<div>Total: {total()}</div>
 		</div>
 	);
 };

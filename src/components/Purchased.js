@@ -18,7 +18,7 @@ let Purchased = (props) => {
 				{capitalize(props.title)} - ${props.price}
 			</h4>
 
-			<h4>Total:{props.price * props.quantity} </h4>
+			<h4>Total:${props.price * props.quantity} </h4>
 		</div>
 	);
 };
