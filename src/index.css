@@ -282,7 +282,7 @@ div h2 {
   flex-wrap: wrap;
   height: 80%;
   width: 90%;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   justify-content: center;
   position: absolute;
   top: 60%;
@@ -312,3 +312,44 @@ div h2 {
   
 
 }
+
+.purchased-item{
+  border: 1px solid;
+  margin: 10px;
+}
+
+.quantity{
+  padding: 5px;
+  margin-top: 5px;
+  border-bottom: 1px solid;
+}
+
+
+.quantity-button:hover{
+  background-color:#F8F8F8;
+}
+
+.test{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid red;
+}
+.quantity-button{
+  color:black;
+  position: relative;
+  font-size: small;
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 8px;
+  background-color: white;
+}
+
+.buttons{
+  position: absolute;
+  top:325px;
+  left: 100px;
+}
+

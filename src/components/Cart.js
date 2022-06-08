@@ -17,23 +17,31 @@ let Cart = (props) => {
 
 	let inCart = purchased.map((item) => {
 		return (
-			<div>
+			<div className="test">
 				<Purchased
 					image={Object.values(item.image)}
 					title={item.title}
 					price={item.price}
 					quantity={item.quantity}
 				/>
-				<button
-					onClick={() => props.increaseQuantity(parseInt(item.id))}
-				>
-					UP
-				</button>
-				<button
-					onClick={() => props.decreaseQuantity(parseInt(item.id))}
-				>
-					Down
-				</button>
+				<div className="buttons">
+					<button
+						className="quantity-button"
+						onClick={() =>
+							props.increaseQuantity(parseInt(item.id))
+						}
+					>
+						+
+					</button>
+					<button
+						className="quantity-button"
+						onClick={() =>
+							props.decreaseQuantity(parseInt(item.id))
+						}
+					>
+						-
+					</button>
+				</div>
 			</div>
 		);
 	});
@@ -42,7 +50,7 @@ let Cart = (props) => {
 		<div>
 			<h2>Cart</h2>
 			<div className="cart-container">{inCart}</div>
-			<div>Total: {total()} </div>
+			<div>Total: {total()}</div>
 		</div>
 	);
 };
