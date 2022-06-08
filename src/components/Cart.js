@@ -17,7 +17,7 @@ let Cart = (props) => {
 
 	let inCart = purchased.map((item) => {
 		return (
-			<div className="test">
+			<div className="cart-main">
 				<Purchased
 					image={Object.values(item.image)}
 					title={item.title}

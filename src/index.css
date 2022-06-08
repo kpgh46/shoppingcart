@@ -211,8 +211,8 @@ border: 2px solid;
 }
 
 .details-button:hover{
-  background-color:#F8F8F8;
-  /* border: .25px solid gray; */
+  background-color:rgb(169, 122, 169);
+  color: white;
 }
 
 .landing-container div {
@@ -259,6 +259,7 @@ border: 2px solid;
 .image-incart{
   height: 300px;
   width: 275px;
+  border: none;
 }
 
 div h2 {
@@ -312,12 +313,11 @@ div h2 {
   background-color: rgb(169, 122, 169);
   color:white;
   border-radius: 2px;
-  
 
 }
 
 .purchased-item{
-  border: 1px solid;
+  border: .25px solid gray;
   margin: 10px;
 }
 
@@ -329,10 +329,11 @@ div h2 {
 
 
 .quantity-button:hover{
-  background-color:#F8F8F8;
+  background-color:rgb(169, 122, 169);
+  color: white;
 }
 
-.test{
+.cart-main{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -361,7 +362,7 @@ div h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid green; */
+  margin-left: .7%;
 }
 
 .total{
