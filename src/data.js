@@ -17,13 +17,18 @@ import indoorSix from "./Assets/indoor/pexels-leah-kelley-6480707.jpg";
 import indoorSeven from "./Assets/indoor/pexels-rodnae-productions-8581051.jpg";
 import indoorEight from "./Assets/indoor/pexels-vecislavas-popa-1571463.jpg";
 
+import newOne from "./Assets/new/daniil-silantev-1P6AnKDw6S8-unsplash.jpg";
+import newTwo from "./Assets/new/nathan-oakley-OngbrOmqtzc-unsplash.jpg";
+import newThree from "./Assets/new/nathan-oakley-UJWFy-5uzS8-unsplash.jpg";
+import newFour from "./Assets/new/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash.jpg";
+
 export default [
 	{
 		id: 1,
 		type: "outdoor",
 		inCart: true,
 		title: "chair",
-		price: 4,
+		price: 100,
 		quantity: 1,
 		image: { outdoorOne },
 		description:
@@ -34,7 +39,7 @@ export default [
 		type: "outdoor",
 		inCart: true,
 		title: "table",
-		price: 7,
+		price: 600,
 		quantity: 1,
 		image: { outdoorTwo },
 		description:
@@ -43,9 +48,9 @@ export default [
 	{
 		id: 3,
 		type: "outdoor",
-		inCart: true,
+		inCart: false,
 		title: "barstool",
-		price: 2,
+		price: 80,
 		quantity: 1,
 		image: { outdoorThree },
 		description:
@@ -56,7 +61,7 @@ export default [
 		type: "outdoor",
 		inCart: false,
 		title: "couch",
-		price: 8,
+		price: 200,
 		quantity: 1,
 		image: { outdoorFour },
 		description:
@@ -67,7 +72,7 @@ export default [
 		type: "outdoor",
 		inCart: false,
 		title: "bed",
-		price: 8,
+		price: 1000,
 		quantity: 1,
 		image: { outdoorFive },
 		description:
@@ -78,7 +83,7 @@ export default [
 		type: "outdoor",
 		inCart: false,
 		title: "table+Chair",
-		price: 20,
+		price: 500,
 		quantity: 1,
 		image: { outdoorSix },
 		description:
@@ -89,7 +94,7 @@ export default [
 		type: "outdoor",
 		inCart: false,
 		title: "table",
-		price: 8,
+		price: 400,
 		quantity: 1,
 		image: { outdoorSeven },
 		description:
@@ -100,14 +105,14 @@ export default [
 		type: "outdoor",
 		inCart: false,
 		title: "chair",
-		price: 8,
+		price: 150,
 		quantity: 1,
 		image: { outdoorEight },
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
 	{
-		id: 5,
+		id: 9,
 		type: "indoor",
 		inCart: false,
 		title: "table",
@@ -118,57 +123,13 @@ export default [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
 	{
-		id: 6,
-		type: "indoor",
-		inCart: false,
-		title: "couch",
-		price: 20,
-		quantity: 1,
-		image: { indoorTwo },
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
-	},
-	{
-		id: 7,
-		type: "indoor",
-		inCart: false,
-		title: "chair",
-		price: 10,
-		quantity: 1,
-		image: { indoorThree },
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
-	},
-	{
-		id: 8,
-		type: "indoor",
-		inCart: false,
-		title: "couch",
-		price: 25,
-		quantity: 1,
-		image: { indoorFour },
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
-	},
-	{
-		id: 9,
-		type: "indoor",
-		inCart: false,
-		title: "desk",
-		price: 25,
-		quantity: 1,
-		image: { indoorFive },
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
-	},
-	{
 		id: 10,
 		type: "indoor",
 		inCart: false,
 		title: "couch",
-		price: 25,
+		price: 550,
 		quantity: 1,
-		image: { indoorSix },
+		image: { indoorTwo },
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
@@ -177,9 +138,9 @@ export default [
 		type: "indoor",
 		inCart: false,
 		title: "chair",
-		price: 25,
+		price: 100,
 		quantity: 1,
-		image: { indoorSeven },
+		image: { indoorThree },
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},
@@ -187,10 +148,101 @@ export default [
 		id: 12,
 		type: "indoor",
 		inCart: false,
+		title: "couch",
+		price: 650,
+		quantity: 1,
+		image: { indoorFour },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
+	},
+	{
+		id: 13,
+		type: "indoor",
+		inCart: false,
+		title: "desk",
+		price: 400,
+		quantity: 1,
+		image: { indoorFive },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
+	},
+	{
+		id: 14,
+		type: "indoor",
+		inCart: false,
+		title: "couch",
+		price: 600,
+		quantity: 1,
+		image: { indoorSix },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
+	},
+	{
+		id: 15,
+		type: "indoor",
+		inCart: false,
+		title: "chair",
+		price: 200,
+		quantity: 1,
+		image: { indoorSeven },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
+	},
+	{
+		id: 16,
+		type: "indoor",
+		inCart: false,
 		title: "table",
-		price: 25,
+		price: 500,
 		quantity: 1,
 		image: { indoorEight },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
+	},
+
+	{
+		id: 17,
+		type: "new",
+		inCart: false,
+		title: "chair",
+		price: 250,
+		quantity: 1,
+		image: { newOne },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
+	},
+
+	{
+		id: 18,
+		type: "new",
+		inCart: false,
+		title: "end table",
+		price: 150,
+		quantity: 1,
+		image: { newTwo },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
+	},
+
+	{
+		id: 19,
+		type: "new",
+		inCart: false,
+		title: "couch",
+		price: 700,
+		quantity: 1,
+		image: { newThree },
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
+	},
+	{
+		id: 20,
+		type: "new",
+		inCart: false,
+		title: "chair",
+		price: 125,
+		quantity: 1,
+		image: { newFour },
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Dictumst quisque sagittis purus sit. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Dui nunc mattis enim ut tellus elementum sagittis vitae.",
 	},

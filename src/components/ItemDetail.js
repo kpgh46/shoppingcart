@@ -1,13 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import data from "../data";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { faTruckArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 let ItemDetail = (props) => {
 	let { id } = useParams();
-	let truck = <FontAwesomeIcon icon={faTruckArrowRight} />;
 
 	let product = data.find((item) => {
 		return item.id === parseInt(id);
@@ -39,7 +35,6 @@ let ItemDetail = (props) => {
 				</button>
 
 				<div className="shipping"></div>
-				{truck}
 			</div>
 		</div>
 	);

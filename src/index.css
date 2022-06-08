@@ -249,7 +249,7 @@ border: 2px solid;
 .itemdetail-photo{
   height: 600px;
   width: 660px;
-  border: 1px solid black;
+  border: .25px solid gray;
 }
 
 .fa{
@@ -294,10 +294,11 @@ div h2 {
 }
 
 .itemdetail-container{
-  border: 1px solid;
+  border: .25px solid gray;
   margin-left: 6.5%;
   margin-right: 6.5%;
   display: flex;
+  
 }
 
 .item-details div div {

@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 let Item = (props) => {
 	let source = props.source;
+	console.log(source);
 
 	let [over, setOver] = React.useState(false);
-	console.log(over);
 
 	let capitalize = (string) => {
 		return string.charAt(0).toUpperCase() + string.slice(1);

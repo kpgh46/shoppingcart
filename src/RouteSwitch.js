@@ -42,7 +42,7 @@ let RouteSwitch = () => {
 	return (
 		<div>
 			<BrowserRouter>
-				{<Header />}
+				{<Header data={productData} />}
 				<Routes>
 					<Route path="/home" element={<HomePage />}></Route>
 					<Route path="/" element={<LandingPage />}></Route>
@@ -58,7 +58,13 @@ let RouteSwitch = () => {
 							<ShoppingPage page="indoor" items={productData} />
 						}
 					></Route>
-					<Route path="/new" element={<New />}></Route>
+					<Route
+						path="/new"
+						element={
+							<ShoppingPage page="new" items={productData} />
+						}
+					></Route>
+
 					<Route
 						path="indoor/itemdetail/:id"
 						element={
@@ -67,6 +73,12 @@ let RouteSwitch = () => {
 					></Route>
 					<Route
 						path="outdoor/itemdetail/:id"
+						element={
+							<ItemDetail handleAddToCart={handleAddToCart} />
+						}
+					></Route>
+					<Route
+						path="new/itemdetail/:id"
 						element={
 							<ItemDetail handleAddToCart={handleAddToCart} />
 						}
