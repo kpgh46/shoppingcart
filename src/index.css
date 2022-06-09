@@ -58,30 +58,30 @@ a{
 
 .landing-container:hover{
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  
 }
 
 .home-container{
   display: flex;
   position: relative;
   justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
   
-  width: 500px;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 0%);
-  
-  width: 100%;
 }
 
 
 .home-left{
-  width: 50%;
-  position: relative
+  flex-basis: 50%;
+  position: relative;
+  margin-right: 5px;
+  
 }
 
 .home-right{
-  width: 50%;
+  flex-basis: 50%;
+  margin-left: 5px;
   position: relative;
 }
 
@@ -89,8 +89,9 @@ a{
   position: absolute;
   top:0;
   left:0;
-  height: 98.5%;
-  width: 98.5%;
+  height: 100%;
+  width: 700px;
+  
   background: rgba(0,0,0,0.3);
   color: white;
   display: flex;
@@ -99,6 +100,7 @@ a{
   justify-content: center;
   opacity: 0;
   transition: opacity 0.2s;
+
 }
 
 .home-overlay:hover{
@@ -155,6 +157,7 @@ transition: opacity 0.2s;
 
 .home-overlay div:hover{
   border: 2px solid;
+  
 }
 
 .overlay div:hover{
