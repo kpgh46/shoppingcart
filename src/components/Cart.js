@@ -42,6 +42,12 @@ let Cart = (props) => {
 					>
 						-
 					</button>
+					<button
+						className="remove-button"
+						onClick={() => props.removeFromCart(parseInt(item.id))}
+					>
+						Remove from Cart
+					</button>
 				</div>
 			</div>
 		);

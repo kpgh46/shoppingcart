@@ -360,6 +360,17 @@ div h2 {
   background-color: white;
 }
 
+.remove-button{
+  border: none;
+  background-color: white;
+  font-size: 9px;
+  margin-left: 40px;
+}
+
+.remove-button:hover{
+text-decoration: underline;
+}
+
 .buttons{
   position: absolute;
   top:325px;

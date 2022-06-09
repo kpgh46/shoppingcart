@@ -39,6 +39,14 @@ let RouteSwitch = () => {
 		);
 	};
 
+	let removeFromCart = (id) => {
+		setProductData((previousData) =>
+			previousData.map((data) => {
+				return data.id === id ? { ...data, inCart: false } : data;
+			})
+		);
+	};
+
 	return (
 		<div>
 			<BrowserRouter>
@@ -90,6 +98,7 @@ let RouteSwitch = () => {
 								items={productData}
 								increaseQuantity={increaseQuantity}
 								decreaseQuantity={decreaseQuantity}
+								removeFromCart={removeFromCart}
 							/>
 						}
 					></Route>
