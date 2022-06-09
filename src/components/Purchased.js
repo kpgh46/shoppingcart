@@ -15,10 +15,10 @@ let Purchased = (props) => {
 			<h4 className="quantity">Quantity: {props.quantity}</h4>
 
 			<h4>
-				{capitalize(props.title)} - ${props.price}
+				{capitalize(props.title)} : ${props.price}
 			</h4>
 
-			<h4>Total:${props.price * props.quantity} </h4>
+			<h4>Total : ${props.price * props.quantity} </h4>
 		</div>
 	);
 };

@@ -34,6 +34,7 @@ let Cart = (props) => {
 						+
 					</button>
 					<button
+						disabled={item.quantity < 1 ? true : false}
 						className="quantity-button"
 						onClick={() =>
 							props.decreaseQuantity(parseInt(item.id))
