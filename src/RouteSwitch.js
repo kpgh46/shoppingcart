@@ -49,9 +49,8 @@ let RouteSwitch = () => {
 
 	return (
 		<div>
-			<BrowserRouter>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				{<Header data={productData} />}
-				<HomePage />
 				<Routes>
 					<Route path="/home" element={<HomePage />}></Route>
 					<Route path="/" element={<LandingPage />}></Route>
