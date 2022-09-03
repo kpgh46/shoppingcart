@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/shoppingcart/static/css/main.a1b894f7.css",
+    "main.js": "/shoppingcart/static/js/main.a0dcbfbf.js",
+    "static/js/787.c337d5b1.chunk.js": "/shoppingcart/static/js/787.c337d5b1.chunk.js",
+    "static/media/pexels-andrea-davis-3653849.jpg": "/shoppingcart/static/media/pexels-andrea-davis-3653849.640d9becda2e5bc6cf27.jpg",
+    "static/media/pexels-maria-salazar-879010.jpg": "/shoppingcart/static/media/pexels-maria-salazar-879010.80867f29ab0fa028a32b.jpg",
+    "static/media/pexels-ata-ebem-11021595.jpg": "/shoppingcart/static/media/pexels-ata-ebem-11021595.0fdc5c0d971aa27f403e.jpg",
+    "static/media/landingPagePhoto.jpg": "/shoppingcart/static/media/landingPagePhoto.80f258a684eeee7b2465.jpg",
+    "static/media/pexels-souranshi-fashion-and-lifestyle-magazine-4497545.jpg": "/shoppingcart/static/media/pexels-souranshi-fashion-and-lifestyle-magazine-4497545.2fa8a73e888bd3844cd0.jpg",
+    "static/media/pexels-hai-vu-8180361.jpg": "/shoppingcart/static/media/pexels-hai-vu-8180361.fa282c72c5eac353ad12.jpg",
+    "static/media/pexels-michael-burrows-7125620.jpg": "/shoppingcart/static/media/pexels-michael-burrows-7125620.1c3bebfb18de962e0ab7.jpg",
+    "static/media/pexels-leah-kelley-6480707.jpg": "/shoppingcart/static/media/pexels-leah-kelley-6480707.99ab121bb33316376f42.jpg",
+    "static/media/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash.jpg": "/shoppingcart/static/media/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash.0f0748f9804f28454f28.jpg",
+    "static/media/pexels-skylar-kang-6430742.jpg": "/shoppingcart/static/media/pexels-skylar-kang-6430742.1f72c3ecaace092d1c50.jpg",
+    "static/media/pexels-designecologist-1008692.jpg": "/shoppingcart/static/media/pexels-designecologist-1008692.4f8261411263d7b8a1e1.jpg",
+    "static/media/pexels-marianne-238377.jpg": "/shoppingcart/static/media/pexels-marianne-238377.074f2c2da6d58ce5a292.jpg",
+    "static/media/pexels-vecislavas-popa-1571463.jpg": "/shoppingcart/static/media/pexels-vecislavas-popa-1571463.5f17862f63a0568732d6.jpg",
+    "static/media/pexels-keegan-checks-10032381.jpg": "/shoppingcart/static/media/pexels-keegan-checks-10032381.4e9412d889592e623978.jpg",
+    "static/media/pexels-rodnae-productions-8581051.jpg": "/shoppingcart/static/media/pexels-rodnae-productions-8581051.7a60a564bd746eb46953.jpg",
+    "static/media/nathan-oakley-OngbrOmqtzc-unsplash.jpg": "/shoppingcart/static/media/nathan-oakley-OngbrOmqtzc-unsplash.4e1bfcde723eab2d510b.jpg",
+    "static/media/pexels-ksu&eli-8680869.jpg": "/shoppingcart/static/media/pexels-ksu&eli-8680869.028c02e4c66045552eb1.jpg",
+    "static/media/pexels-martin-péchy-1866149.jpg": "/shoppingcart/static/media/pexels-martin-péchy-1866149.ed407122b9259e04af8a.jpg",
+    "static/media/nathan-oakley-UJWFy-5uzS8-unsplash.jpg": "/shoppingcart/static/media/nathan-oakley-UJWFy-5uzS8-unsplash.eb81105d2b6ec702402d.jpg",
+    "static/media/pexels-mick-victor-1420902.jpg": "/shoppingcart/static/media/pexels-mick-victor-1420902.ca99af18fa842162785a.jpg",
+    "static/media/pexels-huseyn-kamaladdin-667838.jpg": "/shoppingcart/static/media/pexels-huseyn-kamaladdin-667838.77bd6ffe3bef2e7472df.jpg",
+    "static/media/daniil-silantev-1P6AnKDw6S8-unsplash.jpg": "/shoppingcart/static/media/daniil-silantev-1P6AnKDw6S8-unsplash.1048a71540ff7686544d.jpg",
+    "static/media/pexels-pixabay-358572.jpg": "/shoppingcart/static/media/pexels-pixabay-358572.2a4181519c0bfdd49674.jpg",
+    "index.html": "/shoppingcart/index.html",
+    "main.a1b894f7.css.map": "/shoppingcart/static/css/main.a1b894f7.css.map",
+    "main.a0dcbfbf.js.map": "/shoppingcart/static/js/main.a0dcbfbf.js.map",
+    "787.c337d5b1.chunk.js.map": "/shoppingcart/static/js/787.c337d5b1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1b894f7.css",
+    "static/js/main.a0dcbfbf.js"
+  ]
+}
