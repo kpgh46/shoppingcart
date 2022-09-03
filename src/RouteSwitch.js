@@ -51,6 +51,7 @@ let RouteSwitch = () => {
 		<div>
 			<BrowserRouter>
 				{<Header data={productData} />}
+				<HomePage />
 				<Routes>
 					<Route path="/home" element={<HomePage />}></Route>
 					<Route path="/" element={<LandingPage />}></Route>
