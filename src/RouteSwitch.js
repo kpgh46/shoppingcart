@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import LandingPage from "./components/Landing";
 import Header from "./components/Header";
@@ -49,14 +50,11 @@ let RouteSwitch = () => {
 
 	return (
 		<div>
-			<BrowserRouter>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				{<Header data={productData} />}
 				<Routes>
 					<Route path="/home" element={<HomePage />}></Route>
-					<Route
-						path="shoppingcart/"
-						element={<LandingPage />}
-					></Route>
+					<Route path="/" element={<LandingPage />}></Route>
 					<Route
 						path="/outdoor"
 						element={
