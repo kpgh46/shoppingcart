@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import { HashRouter as Router } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import LandingPage from "./components/Landing";
@@ -50,60 +50,68 @@ let RouteSwitch = () => {
 
 	return (
 		<div>
-			<BrowserRouter basename={process.env.PUBLIC_URL}>
-				{<Header data={productData} />}
-				<Routes>
-					<Route path="/home" element={<HomePage />}></Route>
-					<Route path="/" element={<LandingPage />}></Route>
-					<Route
-						path="/outdoor"
-						element={
-							<ShoppingPage page="outdoor" items={productData} />
-						}
-					></Route>
-					<Route
-						path="/indoor"
-						element={
-							<ShoppingPage page="indoor" items={productData} />
-						}
-					></Route>
-					<Route
-						path="/new"
-						element={
-							<ShoppingPage page="new" items={productData} />
-						}
-					></Route>
+			<BrowserRouter>
+				<HashRouter basename="/">
+					{<Header data={productData} />}
+					<Routes>
+						<Route path="/home" element={<HomePage />}></Route>
+						<Route path="/" element={<LandingPage />}></Route>
+						<Route
+							path="/outdoor"
+							element={
+								<ShoppingPage
+									page="outdoor"
+									items={productData}
+								/>
+							}
+						></Route>
+						<Route
+							path="/indoor"
+							element={
+								<ShoppingPage
+									page="indoor"
+									items={productData}
+								/>
+							}
+						></Route>
+						<Route
+							path="/new"
+							element={
+								<ShoppingPage page="new" items={productData} />
+							}
+						></Route>
 
-					<Route
-						path="indoor/itemdetail/:id"
-						element={
-							<ItemDetail handleAddToCart={handleAddToCart} />
-						}
-					></Route>
-					<Route
-						path="outdoor/itemdetail/:id"
-						element={
-							<ItemDetail handleAddToCart={handleAddToCart} />
-						}
-					></Route>
-					<Route
-						path="new/itemdetail/:id"
-						element={
-							<ItemDetail handleAddToCart={handleAddToCart} />
-						}
-					></Route>
-					<Route
-						path="/cart"
-						element={
-							<Cart
-								items={productData}
-								increaseQuantity={increaseQuantity}
-								decreaseQuantity={decreaseQuantity}
-								removeFromCart={removeFromCart}
-							/>
-						}
-					></Route>
-				</Routes>
+						<Route
+							path="indoor/itemdetail/:id"
+							element={
+								<ItemDetail handleAddToCart={handleAddToCart} />
+							}
+						></Route>
+						<Route
+							path="outdoor/itemdetail/:id"
+							element={
+								<ItemDetail handleAddToCart={handleAddToCart} />
+							}
+						></Route>
+						<Route
+							path="new/itemdetail/:id"
+							element={
+								<ItemDetail handleAddToCart={handleAddToCart} />
+							}
+						></Route>
+						<Route
+							path="/cart"
+							element={
+								<Cart
+									items={productData}
+									increaseQuantity={increaseQuantity}
+									decreaseQuantity={decreaseQuantity}
+									removeFromCart={removeFromCart}
+								/>
+							}
+						></Route>
+					</Routes>
+				</HashRouter>
 			</BrowserRouter>
 		</div>
 	);
