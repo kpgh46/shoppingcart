@@ -43,6 +43,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "babel-jest": "^29.0.2",
+    "gh-pages": "^4.0.0",
+    "react-test-renderer": "^18.2.0"
   }
 }
