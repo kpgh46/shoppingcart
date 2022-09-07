@@ -116,7 +116,7 @@ export default [
 		type: "indoor",
 		inCart: false,
 		title: "table",
-		price: 12,
+		price: 120,
 		quantity: 1,
 		image: { indoorOne },
 		description:
