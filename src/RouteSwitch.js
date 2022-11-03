@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import Cart from "./components/Cart";
 import HomePage from "./components/HomePage";
 import LandingPage from "./components/Landing";
-import Header from "./components/Header";
 import data from "./data";
+import Header from "./components/Header";
 import New from "./components/New";
 import ShoppingPage from "./components/ShoppingPage";
 import ItemDetail from "./components/ItemDetail";
-import Cart from "./components/Cart";
-import React from "react";
 
 let RouteSwitch = () => {
 	let [productData, setProductData] = React.useState(data);

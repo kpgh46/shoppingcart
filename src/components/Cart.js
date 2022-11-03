@@ -8,7 +8,7 @@ let Cart = (props) => {
 	});
 
 	let total = () => {
-		let result = purchased.reduce((total, item) => {
+		let result = purchased.reduce(function (total, item) {
 			return total + item.price * item.quantity;
 		}, 0);
 
